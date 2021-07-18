@@ -9,12 +9,20 @@
     .top-border{
         background-color: black;
         width:100%;
-        display: flex;
-        align-items: center;
     }
     .intro_text{
         color:white;
         margin:auto;
+    }
+
+    .video-games{
+        background-color: gray;
+        margin-top: 20px;
+    }
+    .video-game{
+        background-color: white;
+        display: inline-block;
+        border:solid;
     }
 
 </style>
@@ -22,7 +30,7 @@
 <body>
     <!-- Top border, I want to have my name, my nickname, my photo, my general info and my contact-->
     <header>
-        <div class="top-border" id="top-border">
+        <div class="top-border">
             <h2>
                 <strong class="intro_text">Brice Vachez - ExLZyor</strong>
             </h2>
@@ -46,6 +54,32 @@
 
     <!-- Then I want all my video games and video game related stuff-->
     <!-- La Folie de Brice, Late For School, MOBA-->
+
+    <div class="video-games">
+        <header>
+            <h1>
+                <strong>
+                    Jeux vidéo
+                </strong>
+            </h1>
+        </header>
+        <div class="video-game" id="la-folie-de-brice">
+            <a href="Projects/La-Folie-de-Brice.html">
+                <img src="Images/La-Folie-de-Brice/banner.png">
+                <h2>
+                    <strong>La Folie de Brice</strong>
+                </h2>
+            </a>
+        </div>
+        <div class="video-game" id="late-for-school">
+            <a href="Projects/Late-for-School.html">
+                <img width="323" height="165" src="Images/Late-for-School/banner.png">
+                <h2>
+                    <strong>Late for School</strong>
+                </h2>
+            </a>
+        </div>
+    </div>
 
     <!-- Folie : https://gitlab.com/SoPlump/la-folie-de-brice -->
     <!-- Folie : https://soplump.itch.io/la-folie-de-brice -->
