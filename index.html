@@ -10,7 +10,7 @@
         background-color: black;
         width:100%;
     }
-    .intro_text{
+    .white_text{
         color:white;
         margin:auto;
     }
@@ -25,6 +25,20 @@
         border:solid;
     }
 
+    .softwares{
+        background-color: black;
+        margin-top: 20px;
+    }
+    .software{
+        background-color: white;
+        display: inline-block;
+        border:solid;
+    }
+
+    .banner{
+        border:5px solid white;
+    }
+
 </style>
 
 <body>
@@ -32,10 +46,10 @@
     <header>
         <div class="top-border">
             <h2>
-                <strong class="intro_text">Brice Vachez - ExLZyor</strong>
+                <strong class="white_text">Brice Vachez - ExLZyor</strong>
             </h2>
             <h4>
-                <strong class="intro_text">
+                <strong class="white_text">
                     Étudiant ingénieur en informatique<br/>
                     Développeur de jeu vidéo par passion
                 </strong>
@@ -65,7 +79,7 @@
         </header>
         <div class="video-game" id="la-folie-de-brice">
             <a href="Projects/La-Folie-de-Brice.html">
-                <img src="Images/La-Folie-de-Brice/banner.png">
+                <img class="banner" src="Images/La-Folie-de-Brice/banner.png">
                 <h2>
                     <strong>La Folie de Brice</strong>
                 </h2>
@@ -73,9 +87,17 @@
         </div>
         <div class="video-game" id="late-for-school">
             <a href="Projects/Late-for-School.html">
-                <img width="323" height="165" src="Images/Late-for-School/banner.png">
+                <img class="banner" width="323" height="165" src="Images/Late-for-School/banner.png">
                 <h2>
                     <strong>Late for School</strong>
+                </h2>
+            </a>
+        </div>
+        <div class="video-game" id="arena-of-the-allmighty">
+            <a href="Projects/Arena-of-the-Allmighty.html">
+                <img class="banner" width="320" height="293" src="Images/Arena-of-the-Allmighty/wip.png">
+                <h2>
+                    <strong>Arena of the Allmighty</strong>
                 </h2>
             </a>
         </div>
@@ -88,6 +110,42 @@
 
     <!-- Then I want some of my software stuff -->
     <!-- C++ Compiler, Videogame Engine, Tainted Cain Helper-->
+
+    <div class="softwares">
+        <header>
+            <h1>
+                <strong class="white_text">
+                    Logiciels
+                </strong>
+            </h1>
+        </header>
+        <div class="software" id="compiler">
+            <a href="Projects/Compiler.html">
+                <h2>
+                    <strong>Compilateur C en C++</strong>
+                </h2>
+            </a>
+
+        </div>
+        <div class="software" id="engine">
+            <a href="Projects/Engine.html">
+                <img class="banner" width="320" height="167" src="Images/Moteur/banner.png">
+                <h2>
+                    <strong>Moteur de jeux vidéo basique</strong>
+                </h2>
+            </a>
+
+        </div>
+        <div class="software" id="tainted-cain-helper">
+            <img class="banner" width="320" height="293" src="Images/Arena-of-the-Allmighty/wip.png">
+            <a href="Projects/Tainted-Cain-Helper.html">
+                <h2>
+                    <strong>Tainted Cain Helper</strong>
+                </h2>
+            </a>
+
+        </div>
+    </div>
 
     <!-- Compiler : https://gitlab.com/mohateri/pld-comp -->
     <!-- Engine : https://gitlab.com/SoPlump/video-game-engine -->
