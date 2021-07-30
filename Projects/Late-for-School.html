@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    .video {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .back1{
+        background-color: lightgray;
+    }
+    .back2{
+        background-color: lightblue;
+    }
+    .text{
+        margin-top: 15px;
+        width:40%;
+        display: inline-block;
+        font-size: 100px;
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <title>Brice Vachez - Late for School</title>
 </head>
 <body>
+    <div class="video">
+        <video controls width="100%" >
+            <source src="../Images/Late-for-School/trailer.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="back1">
+        <p class="text">
+            <strong>Late For School</strong> est un jeu d'énigme à l'ambiance survival-horror développé sur Unreal Engine 4
+            par une équipe de 6 personnes, et pendant une durée de 3 mois.
+            Vous êtes un inspecteur chargé d'enquêter sur des bruits étranges entendus dans une école censée être abandonnée.
+            À vous de percer le mystère de cette école tout en survivant aux atrocités hantant les lieux.
+        </p>
+    </div>
+
+    <div class="back2">
+        <p class="text">
+            La plupart des assets utilisés n'appartenant pas aux développeurs mais à l'Université du Québec à Chicoutimi,
+            nous ne pouvons pas partager publiquement le jeu ou le repo complet. À ces fins, un repo Git a été créé contenant
+            l'ensemble de mon travail dans le jeu.
+        </p>
+        <a href="https://github.com/BriceVachez/Late-For-School---Code">
+            <img src="../Images/logo-github.png">
+        </a>
+    </div>
+
+    <div class="back1">
+        <p class="text">
+            <strong>Mon impact</strong><br><br>
+            J'ai d'abord participé à la recherche du concept puis à la réalisation du Game Design Document.<br>
+            Pendant la phase de développement, j'étais en charge de la prise en main de Perforce, afin de réaliser le dépôt puis d'expliquer
+            les manipulations basiques à mes équipiers.<br>
+            En terme de code, je me suis occupé du code C++ et des Blueprint implémentant l'intéraction du personnage avec son environnement :
+            utilisation des portes, des clés, ramassage des objets, système d'inventaire et de salle de stockage du joueur, etc...
+        </p>
+    </div>
 
 </body>
 </html>
