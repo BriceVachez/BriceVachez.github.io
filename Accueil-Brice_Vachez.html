@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
 <head>
+	<script type="text/javascript" src="slides.js"></script>
 <meta charset="utf-8">
 <title>Accueil</title>
 <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="showJVSlides(0)">
 	<header>
 		<div class="titre"><h1>Brice Vachez - ExLZyor</h1>
 		<h2>Étudiant ingénieur en informatique<br>Développeur de jeu vidéo par passion</h2>
@@ -28,10 +29,41 @@
 			<img id="photo" src="Images/Overwatch_screenshot_05.jpg">
 		</div>
 	</header>
-	<h2>Jeux Vidéos</h2>
-	<h2>Logiciels</h2>
-	
-	
-	<footer>Site réalisé par Mathias Vachez</footer>
+
+	<div id="jeux_videos" class="jeux_videos">
+		<div class="sous-titre">
+			<h3>Jeux Vidéos</h3>
+		</div>
+		<div class="slideshow">
+
+			<a class="prev" onclick="showPreviousJVSlides()">&#10094;</a>
+			<!-- Toutes les images / liens -->
+			<div id="jv0" class="slide_jv fade">
+				<a href="Projects/La-Folie-de-Brice.html">
+					<img src="Images/La-Folie-de-Brice/banner.png">
+				</a>
+			</div>
+
+			<div id="jv1" class="slide_jv fade">
+				<a href="Projects/Late-for-School.html">
+					<img src="Images/Late-for-School/banner.png">
+				</a>
+			</div>
+
+			<div id="jv2" class="slide_jv fade">
+				<a href="Projects/Arena-of-the-Allmighty.html">
+					<img src="Images/Arena-of-the-Allmighty/wip.png">
+				</a>
+			</div>
+			<a class="next" onclick="showNextJVSlides()">&#10095;</a>
+		</div>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="showExplicitSlides(0)"></span>
+			<span class="dot" onclick="showExplicitSlides(1)"></span>
+			<span class="dot" onclick="showExplicitSlides(2)"></span>
+		</div>
+	</div>
 </body>
 </html>
