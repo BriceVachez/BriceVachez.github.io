@@ -1,117 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <script type="text/javascript" src="slides.js"></script>
+    <meta charset="utf-8">
     <title>Brice Vachez</title>
-	<link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Top border, I want to have my name, my nickname, my photo, my general info and my contact-->
-    <header>
-        <div>
-            <h2>
-                Brice Vachez - ExLZyor
-            </h2>
-            <h4>
-                    Étudiant ingénieur en informatique<br/>
-                    Développeur de jeu vidéo par passion
-            </h4>
-            <a href="https://exlzyor.itch.io">
-                <img width="48" height="48" src="Images/logo-itchio.png">
+<body onload="showSlides()">
+<header>
+    <div class="titre"><h1>Brice Vachez - ExLZyor</h1>
+        <h2>Étudiant ingénieur en informatique<br>Développeur de jeu vidéo par passion</h2>
+    </div>
+
+    <div class="social">
+        <a href = "Files/CV-Brice-GP.pdf" target="_blank"><img id="cv" src="Images/CV.png"></a>
+        <div class="networks">
+            <a href="https://github.com/bricevachez">
+                <img width="84" height="84" src="Images/logo-github.png">
             </a>
             <a href="https://https://fr.linkedin.com/in/brice-vachez-0b30b1177">
-                <img width="48" height="48" src="Images/logo-linkedin.png">
+                <img width="84" height="84" src="Images/logo-linkedin.png">
             </a>
-            <button type="submit">
-                <a href = "Files/CV-Brice-GP.pdf" target="_blank"> Mon CV</a>
-            </button>
+            <a href="https://exlzyor.itch.io">
+                <img width="84" height="84" src="Images/logo-itchio.png">
+            </a>
         </div>
-    </header>
+        <img id="photo" src="Images/Overwatch_screenshot_05.jpg">
+    </div>
+</header>
 
-    <!-- Then I want all my video games and video game related stuff-->
-    <!-- La Folie de Brice, Late For School, MOBA-->
+<div id="jeux_videos" class="jeux_videos">
+    <div class="sous-titre">
+        <h3>Jeux Vidéos</h3>
+    </div>
+    <div class="slideshow">
 
-    <div class="video-games">
-        <header>
-            <h1>
-                <strong>
-                    Jeux vidéo
-                </strong>
-            </h1>
-        </header>
-        <div class="video-game" id="la-folie-de-brice">
+        <a class="prev" onclick="showPreviousJVSlides()">&#10094;</a>
+        <!-- Toutes les images / liens -->
+        <div id="jv0" class="slide fade">
             <a href="Projects/La-Folie-de-Brice.html">
-                <img class="banner" src="Images/La-Folie-de-Brice/banner.png">
-                <h2>
-                    <strong>La Folie de Brice</strong>
-                </h2>
+                <img src="Images/La-Folie-de-Brice/banner.png">
             </a>
         </div>
-        <div class="video-game" id="late-for-school">
+
+        <div id="jv1" class="slide fade">
             <a href="Projects/Late-for-School.html">
-                <img class="banner" width="323" height="165" src="Images/Late-for-School/banner.png">
-                <h2>
-                    <strong>Late for School</strong>
-                </h2>
+                <img src="Images/Late-for-School/banner.png">
             </a>
         </div>
-        <div class="video-game" id="arena-of-the-allmighty">
+
+        <div id="jv2" class="slide fade">
             <a href="Projects/Arena-of-the-Allmighty.html">
-                <img class="banner" width="320" height="293" src="Images/Arena-of-the-Allmighty/wip.png">
-                <h2>
-                    <strong>Arena of the Allmighty</strong>
-                </h2>
+                <img src="Images/Arena-of-the-Allmighty/wip.png">
             </a>
         </div>
+        <a class="next" onclick="showNextJVSlides()">&#10095;</a>
     </div>
 
-    <!-- Folie : https://gitlab.com/SoPlump/la-folie-de-brice -->
-    <!-- Folie : https://soplump.itch.io/la-folie-de-brice -->
-    <!-- Late : https://github.com/BriceVachez/Late-For-School---Code -->
-    <!-- MOBA : https://github.com/BriceVachez/Arena-of-the-Almighty -->
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="showExplicitJVSlides(0)"></span>
+        <span class="dot" onclick="showExplicitJVSlides(1)"></span>
+        <span class="dot" onclick="showExplicitJVSlides(2)"></span>
+    </div>
+</div>
 
-    <!-- Then I want some of my software stuff -->
-    <!-- C++ Compiler, Videogame Engine, Tainted Cain Helper-->
+<div id="logiciels" class="logiciels">
+    <div class="sous-titre">
+        <h3>Logiciels</h3>
+    </div>
+    <div class="slideshow">
 
-    <div class="softwares">
-        <header>
-            <h1>
-                <strong class="white_text">
-                    Logiciels
-                </strong>
-            </h1>
-        </header>
-        <div class="software" id="compiler">
+        <a class="prev" onclick="showPreviousLogSlides()">&#10094;</a>
+        <!-- Toutes les images / liens -->
+        <div id="log0" class="slide fade">
             <a href="Projects/Compiler.html">
-                <h2>
-                    <strong>Compilateur C en C++</strong>
-                </h2>
+                <img src="Images/Compilateur/Code_C.png">
             </a>
-
         </div>
-        <div class="software" id="engine">
+
+        <div id="log1" class="slide fade">
             <a href="Projects/Engine.html">
-                <img class="banner" width="320" height="167" src="Images/Moteur/banner.png">
-                <h2>
-                    <strong>Moteur de jeux vidéo basique</strong>
-                </h2>
+                <img src="Images/Moteur/banner.png">
             </a>
-
         </div>
-        <div class="software" id="tainted-cain-helper">
-            <img class="banner" width="320" height="293" src="Images/Arena-of-the-Allmighty/wip.png">
+
+        <div id="log2" class="slide fade">
             <a href="Projects/Tainted-Cain-Helper.html">
-                <h2>
-                    <strong>Tainted Cain Helper</strong>
-                </h2>
+                <img src="Images/Arena-of-the-Allmighty/wip.png">
             </a>
-
         </div>
+        <a class="next" onclick="showNextLogSlides()">&#10095;</a>
     </div>
 
-    <!-- Compiler : https://gitlab.com/mohateri/pld-comp -->
-    <!-- Engine : https://gitlab.com/SoPlump/video-game-engine -->
-    <!-- Cain : https://github.com/BriceVachez/tainted-cain-helper -->
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="showExplicitLogSlides(0)"></span>
+        <span class="dot" onclick="showExplicitLogSlides(1)"></span>
+        <span class="dot" onclick="showExplicitLogSlides(2)"></span>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <h4>
+            Site réalisé par Mathias Vachez et Brice Vachez
+        </h4>
+    </div>
+</footer>
 </body>
 </html>
